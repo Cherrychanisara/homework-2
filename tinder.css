@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wall {
+    display: flex;
+    /* Enables flexbox */
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Centers vertically */
+    height: 100vh;
+    /* Full viewport height */
+   
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://tinder.com/static/build/ac062d1b428513b9c13d11026d330e34.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.con {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+.head {
+    font-size: 120px;
+    /* This now works correctly */
+    line-height: 0.5rem;
+}
+
+
+
+button {
+    background-color: #88ecf3;
+    width: 100px;
+    height: 50px;
+    border: 0px;
+    font-weight: bold;
+    color: white;
+    border-radius: 9999px; /* Optional: Adds rounded corners */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-image: linear-gradient(to top, #ec4899, #e97456); /* Smooth transition for hover effects */
+}
+
+button:hover {
+    background-color: #ffffff; /* Darkens the button color on hover */
+    transform: scale(1.1); /* Slightly enlarges the button on hover */
+}
+
+button:active {
+    transform: scale(2); /* Scales the button when it's clicked */
+    background-color: #4ea9b5; /* Optional: Change color during click */
+}
+
+
+.home-button {
+    position: fixed; /* Fixes the button on the screen */
+    top: 20px; /* Distance from the top */
+    right: 70px; 
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav {
+    position: fixed;
+    top: 0px;
+    background-image: linear-gradient(to top, transparent, rgb(0, 0, 0));
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* à¹€à¸žà¸´à¹ˆà¸¡à¸Šà¹ˆà¸­à¸‡à¸§à¹ˆà¸²à¸‡à¸”à¹‰à¸²à¸™à¸‚à¹‰à¸²à¸‡ */
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* à¹€à¸žà¸´à¹ˆà¸¡à¸£à¸°à¸¢à¸°à¸«à¹ˆà¸²à¸‡à¸£à¸°à¸«à¸§à¹ˆà¸²à¸‡à¹à¸•à¹ˆà¸¥à¸°à¸­à¸‡à¸„à¹Œà¸›à¸£à¸°à¸à¸­à¸š */
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    padding-right: 100px;
+}
+
+.nav-right div {
+background-color: rgb(255, 255, 255);
+border-radius: 9999px;
+padding: 6px 10px;
+font-weight: bold;
+color: #000;
+font-size: 20px;
+}
+
+.nav-logo {
+    height: 100px; /* à¸à¸³à¸«à¸™à¸”à¸‚à¸™à¸²à¸”à¹‚à¸¥à¹‚à¸à¹‰ */
+}
+
+.nav-text {
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-text:hover {
+    color: #ff5a5f; /* à¹€à¸›à¸¥à¸µà¹ˆà¸¢à¸™à¸ªà¸µà¹€à¸¡à¸·à¹ˆà¸­ hover */
+}
+
+/* HOME button hover effect */
+.home-button:hover {
+    transform: scale(1.1);
+}
+
+.bottom {
+    width: 90%; /* Full width minus the margins */
+    position: fixed; /* Fixes the text to the viewport */
+    bottom: 20px; /* Places the text 20px above the bottom of the viewport */
+    margin: 0; /* Ensures no additional margins are applied */
+    color: rgb(173, 173, 173); /* Text color */
+    text-align: right; /* Aligns the text to the right */
+    font-size: 14px; /* Adjusts font size for readability */
+    font-family: Arial, sans-serif; /* Adds a clean font */
+}
